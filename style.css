@@ -31,3 +31,23 @@ h1,h2,h3{letter-spacing:-1px}.hero h1{letter-spacing:-2px}.editorial-break>div>p
 @media(max-width:1050px){.fit>div>h2{font-size:37px}.fit-body>p{font-size:16px}}
 @media(max-width:750px){.fit{display:block}.fit>div:first-child,.fit>.fit-note{display:block}.fit>.fit-note{margin-top:55px}.fit>div>.eyebrow{margin-bottom:24px}.fit>div>h2{font-size:39px;margin-bottom:32px}.fit-body>p{font-size:17px}}
 .fit>div>.eyebrow{font-size:12px;line-height:1.7;letter-spacing:2.2px}.fit-body>ul>li{line-height:1.85}@media(max-width:750px){.fit>div>.eyebrow{font-size:11px;letter-spacing:1.8px}}
+
+/* Responsive heading rhythm and real whitespace between phrases. */
+.editorial-break>div>p:last-child{max-width:24ch;text-wrap:balance}
+.editorial-break .editorial-line{display:block}
+.editorial-break .editorial-line+.editorial-line{margin-top:.12em}
+@media(max-width:750px){
+  main h2,main .section-heading h2,main .proposal h2,main .statement h2,main .recognition h2,main .pause h2,main .fit>div>h2,main .experts .section-heading h2,main .first-step h2,main .offer-heading h2,main .faq h2,main .closing h2{font-size:clamp(29px,5.2vw,36px);line-height:1.22;letter-spacing:-.65px;text-wrap:balance}
+  main h2 br,main h3 br{display:none}
+  .proposal>div:last-child,.statement>div,.section-heading,.faq>div:first-child{text-align:left}
+  .section-heading,.recognition .section-heading{max-width:none}
+  .proposal h2,.statement h2{margin-bottom:28px}
+  .feature-row h3,.expert-grid h3{font-size:clamp(27px,5vw,33px);line-height:1.25;text-wrap:balance}
+  .invitation h3{font-size:34px;line-height:1.2;text-wrap:balance}
+  .editorial-break>div>p:last-child{font-size:clamp(32px,5.8vw,42px);line-height:1.22;letter-spacing:-.7px;max-width:20ch}
+}
+@media(max-width:650px){
+  .hero h1{font-size:clamp(35px,8.8vw,48px);line-height:1.16;letter-spacing:-.8px;text-wrap:balance}
+  .hero h1 br{display:none}
+  .hero h1 em{display:inline}
+}
