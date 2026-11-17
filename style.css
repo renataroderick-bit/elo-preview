@@ -61,3 +61,11 @@ h1,h2,h3{letter-spacing:-1px}.hero h1{letter-spacing:-2px}.editorial-break>div>p
 .closing::before{background-image:linear-gradient(#17202480,#17202480),url(elo-pausa.jpeg);background-position:center 57%}
 @media(max-width:750px){.pause::before{background-position:center 45%}.closing::before{background-position:center 68%}}
 @media(prefers-reduced-motion:reduce){.editorial-break>img,.pause::before,.offer-panel::before,.closing::before{transform:none!important;will-change:auto}}
+
+/* Vector arrows keep the same light stroke on every device. */
+.arrow-icon{display:inline-block;width:20px;height:20px;flex:0 0 auto;vertical-align:middle;letter-spacing:0}
+.button .arrow-icon{width:25px;height:25px}
+.header-cta,.text-link,footer>a:last-of-type,.hero-bottom>a{display:inline-flex;align-items:center;gap:20px}
+.header-cta .arrow-icon,.text-link .arrow-icon{margin-left:12px}
+.hero-bottom .arrow-icon{width:14px;height:14px}
+@media(max-width:650px){.arrow-icon{width:18px;height:18px}.button .arrow-icon{width:23px;height:23px}.header-cta,.text-link,footer>a:last-of-type{gap:14px}.header-cta .arrow-icon,.text-link .arrow-icon{margin-left:0}}
